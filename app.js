@@ -26,32 +26,14 @@ console.log(fibsRec(8));
 console.log(arr);
 
 // Mergesort
-let array = [7, 3, 4, 1, 6, 2, 9, 8];
+let array = [4, 8, 6, 2, 1, 7, 5, 3];
+let arr3 = [];
 function merge_sort(arr) {
   if (arr.length < 2) {
+    console.log('bro');
     return;
   } else {
-    let left = arr.slice(0, arr.length / 2);
-    let right = arr.slice(arr.length / 2);
-
-    let i = 0;
-    let j = 0;
-    let save = [];
-    console.log(left);
-    console.log(right);
-
-    while (i + j < left.length + right.length) {
-      if (left[i] < right[j]) {
-        save[i + j] = left[i];
-        i++;
-      } else {
-        save[i + j] = right[j];
-        j++;
-      }
-    }
-
-    return (array = save);
   }
 }
 merge_sort(array);
-console.log(array);
+console.log(arr3);
